@@ -1,0 +1,122 @@
+{
+  "excludeFromTraining" : false,
+  "elements" : {
+    "7" : {
+      "height" : 128,
+      "xPosition" : 32,
+      "green" : 0.043137254901960784,
+      "feature" : "Footer",
+      "width" : 768,
+      "tag" : "Image",
+      "blue" : 0.043137254901960784,
+      "red" : 0.043137254901960784,
+      "contentString" : "\/Users\/todi\/Documents\/FamiliarBrowser\/FamiliariserStockAssets.nosync\/footer5.png",
+      "textDescription" : "Footer",
+      "yPosition" : 832
+    },
+    "3" : {
+      "height" : 64,
+      "xPosition" : 640,
+      "green" : 0.043137254901960784,
+      "feature" : "Search",
+      "width" : 288,
+      "tag" : "Image",
+      "blue" : 0.043137254901960784,
+      "red" : 0.043137254901960784,
+      "contentString" : "\/Users\/todi\/Documents\/FamiliarBrowser\/FamiliariserStockAssets.nosync\/search5.png",
+      "textDescription" : "Search",
+      "yPosition" : 32
+    },
+    "8" : {
+      "height" : 128,
+      "xPosition" : 800,
+      "green" : 0.043137254901960784,
+      "feature" : "Social",
+      "width" : 128,
+      "tag" : "Image",
+      "blue" : 0.043137254901960784,
+      "red" : 0.043137254901960784,
+      "contentString" : "\/Users\/todi\/Documents\/FamiliarBrowser\/FamiliariserStockAssets.nosync\/social5.png",
+      "textDescription" : "Social",
+      "yPosition" : 832
+    },
+    "4" : {
+      "height" : 96,
+      "xPosition" : 32,
+      "green" : 1,
+      "feature" : "Logo",
+      "width" : 288,
+      "tag" : "Image",
+      "blue" : 1,
+      "red" : 1,
+      "contentString" : "\/Users\/todi\/Documents\/FamiliarBrowser\/FamiliariserStockAssets.nosync\/logo5.png",
+      "textDescription" : "Logo",
+      "yPosition" : 128
+    },
+    "0" : {
+      "height" : 988,
+      "xPosition" : 0,
+      "green" : 1,
+      "feature" : "none",
+      "width" : 1024,
+      "tag" : "Unassigned\/Simple Box",
+      "blue" : 1,
+      "red" : 1,
+      "contentString" : "",
+      "textDescription" : "none",
+      "yPosition" : 0
+    },
+    "5" : {
+      "height" : 64,
+      "xPosition" : 480,
+      "green" : 1,
+      "feature" : "Menu",
+      "width" : 448,
+      "tag" : "Image",
+      "blue" : 1,
+      "red" : 1,
+      "contentString" : "\/Users\/todi\/Documents\/FamiliarBrowser\/FamiliariserStockAssets.nosync\/menu5.png",
+      "textDescription" : "Menu",
+      "yPosition" : 160
+    },
+    "1" : {
+      "height" : 64,
+      "xPosition" : 352,
+      "green" : 0.043137254901960784,
+      "feature" : "Account",
+      "width" : 160,
+      "tag" : "Image",
+      "blue" : 0.043137254901960784,
+      "red" : 0.043137254901960784,
+      "contentString" : "\/Users\/todi\/Documents\/FamiliarBrowser\/FamiliariserStockAssets.nosync\/account5.png",
+      "textDescription" : "Account",
+      "yPosition" : 32
+    },
+    "6" : {
+      "height" : 544,
+      "xPosition" : 192,
+      "green" : 1,
+      "feature" : "Content",
+      "width" : 736,
+      "tag" : "Image",
+      "blue" : 1,
+      "red" : 1,
+      "contentString" : "\/Users\/todi\/Documents\/FamiliarBrowser\/FamiliariserStockAssets.nosync\/Content5.png",
+      "textDescription" : "Content",
+      "yPosition" : 224
+    },
+    "2" : {
+      "height" : 64,
+      "xPosition" : 512,
+      "green" : 0.043137254901960784,
+      "feature" : "Cart",
+      "width" : 128,
+      "tag" : "Image",
+      "blue" : 0.043137254901960784,
+      "red" : 0.043137254901960784,
+      "contentString" : "\/Users\/todi\/Documents\/FamiliarBrowser\/FamiliariserStockAssets.nosync\/Cart5.png",
+      "textDescription" : "Cart",
+      "yPosition" : 32
+    }
+  }
+}
