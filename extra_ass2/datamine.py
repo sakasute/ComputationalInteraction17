@@ -1,37 +1,45 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 from pomegranate import *
 import math
 import cairo
+import json
+import os
 
-WIDTH, HEIGHT = 256, 256
 
-surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, WIDTH, HEIGHT)
-ctx = cairo.Context(surface)
+def load_data():
+    """Load data element-data from json-files inside websites-folder"""
 
-ctx.scale(WIDTH, HEIGHT)  # Normalizing the canvas
+    # array that will contain all the elements from the json-files
+    data = []
 
-pat = cairo.LinearGradient(0.0, 0.0, 0.0, 1.0)
-pat.add_color_stop_rgba(1, 0.7, 0, 0, 0.5)  # First stop, 50% opacity
-pat.add_color_stop_rgba(0, 0.9, 0.7, 0.2, 1)  # Last stop, 100% opacity
+    # keys that will be left to the element data
+    wanted_keys = ["feature", "xPosition", "yPosition", "width", "height"]
 
-ctx.rectangle(0, 0, 1, 1)  # Rectangle(x0, y0, x1, y1)
-ctx.set_source(pat)
-ctx.fill()
+    for filename in os.listdir('websites'):
+        with open('websites/' + filename) as json_data:
+            website_data = json.load(json_data)
+            data.append(website_data)
+            # for el_ind in website_data["elements"]:
+            #     el_data = website_data["elements"][el_ind]
+            #     el_data_pruned = {key: el_data[key] for key in wanted_keys}
+            #     data.append(el_data_pruned)
 
-ctx.translate(0.1, 0.1)  # Changing the current transformation matrix
+    return data
 
-ctx.move_to(0, 0)
-# Arc(cx, cy, radius, start_angle, stop_angle)
-ctx.arc(0.2, 0.1, 0.1, -math.pi / 2, 0)
-ctx.line_to(0.5, 0.1)  # Line to (x,y)
-# Curve(x1, y1, x2, y2, x3, y3)
-ctx.curve_to(0.5, 0.2, 0.5, 0.4, 0.2, 0.8)
-ctx.close_path()
 
-ctx.set_source_rgb(0.3, 0.2, 0.5)  # Solid color
-ctx.set_line_width(0.02)
-ctx.stroke()
+def normalize_data(data):
+    """
+    Normalize given data such that element locations and sizes are given as a 
+    float between 0 and 1 describing the relative size compared to the element's
+    root element.
+    """
 
-surface.write_to_png("example.png")  # Output to PNG
+
+def main():
+    """Main program logic"""
+
+    data = load_data()
+    print(data[0])
+
+
+if __name__ == '__main__':
+    main()
